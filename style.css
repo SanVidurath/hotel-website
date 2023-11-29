@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+h2{
+  font-size: 1.25rem;
+  margin-bottom: 0.75em;
+}
+
+h3{
+  font-size: 1rem;
+  margin-bottom: 0.85em;
+}
+
+h4{
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.85rem;
+  margin: 1em 0;
+  line-height: 1.5;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 700;
+  color: #fff;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+.btn{
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-color: orangered;
+  padding: 0.25em 0.5em;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+img{
+  max-width: 100%;
+}
+
+.section-padding{
+  padding: 1em 0;
+}
+
+.rule{
+  width: 40%;
+  height: 1px;
+  border-radius: 15px;
+  background-color: orangered;
+}
+
+/* Nav Section */
+nav{
+  padding: 0.25em 0;
+}
+
+nav img{
+  max-width: 20%;
+}
+
+nav i{
+  font-size: 1.25rem;
+  color: black;
+  border: 1px solid;
+  padding: 0.1em;
+  border-radius: 50%;
+}
+
+nav .container .nav-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-list{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+nav .nav-link{
+  color: #000;
+}
+
+.visible{
+  display: none;
+}
+
+/* Home Section */
+.home{
+  background-image: url(./images/hotel.jpg);
+  background-repeat: no-repeat;
+}
+
+.home .text{
+  color: #fff;
+}
+
+.home .form{
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 3px 23px 0px rgba(84,83,217,0.75);
+}
+
+.home .form form input{
+  margin-bottom: 1em;
+  padding: 0.15em;
+}
+
+.home .form form input:last-child{
+  margin-bottom: 15px;
+}
+
+/* About Section */
+.about .grid-container .grid-text{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about .grid-container .grid-image{
+  margin-top: 0.25em;
+}
+
+/* Suites Section */
+.suites{
+  text-align: center;
+}
+
+.suites .rule{
+  margin: 0 auto;
+}
+.suites .text .check-items{
+  display: grid;
+  grid-template-columns: 10px 200px;
+  justify-content: center;
+  padding: 0 2em;
+  margin-bottom: 1em;
+}
+
+.suites .flex-container .grid-images{
+  width: 80%;
+  margin: 2em auto;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.suites .flex-container .grid-images .grid-span-2{
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.suites .flex-container .grid-images img:nth-child(4){
+  grid-column: 3/4;
+}
+
+.suites .flex-container .grid-images img:nth-child(5){
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* Review Section */
+.reviews img{
+  max-width: 20%;
+  max-height: 20%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.reviews .top-text{
+  text-align: center;
+}
+
+.reviews .top-text .rule{
+  margin: 0 auto;
+}
+
+.reviews .grid-text .first-review,.second-review,.third-review{
+  padding: 1em 0 1em 1em;
+  border: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.reviews h4{
+  margin-bottom: 0.25em;
+}
+
+/* Footer Section */
+footer{
+  background-color: #454B1B;
+  color: #fff;
+}
+
+footer.contact .contact-us .address,.email,.mobile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer i{
+  color: white;
+}
+
+@media (min-width:680px){
+  .suites .flex-container .grid-images{
+    width: 400px;
+  }
+}
+
+@media (min-width:750px){
+  nav{
+    padding: 0;
+    padding-bottom: 1.5em;
+  }
+
+  nav .nav-top{
+    height: 2vh;
+  }
+
+  nav .nav-top img{
+    height: 10vh;
+    position: relative;
+    top: 3vh;
+  }
+  
+  nav .nav-top i{
+    display: none;
+  }
+
+  nav .nav-list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5em;
+    position: relative;
+    
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home{
+    background-repeat: repeat;
+  }
+
+  .reviews .grid-text{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+  }
+
+  footer .top-text{
+    width: 30%;
+  }
+
+  footer .mid-text,.bottom-text{
+    margin-right: auto;
+    margin-left: 10vw;
+  }
+
+  footer .bottom-text{
+    margin-left: 10vw;
+  }
+
+}
+
+@media (min-width:875px){
+  .home .container{
+    display: flex;
+    gap: 1em;
+  }
+
+  .home .container .form{
+    margin-top: 0;
+  }
+
+  .about .grid-container{
+    display: flex;
+    gap: 1em;
+  }
+
+  .about .grid-container .about-flex-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .about .grid-container .about-flex-container .text-2{
+    grid-row: 2;
+  }
+
+  .about .grid-container .about-flex-container .text-4{
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .about .grid-container .grid-bottom-image{
+    width: 80%;
+    align-self: center;
+  }
+
+  .suites .flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .suites .flex-container .grid-images{
+    width: 500px;
+  }
+
+  .suites .flex-container .text{
+    width: 50vw;
+    margin: 1em auto;
+    text-align: left;
+  }
+
+  .suites .text .check-items{
+    display: grid;
+    grid-template-columns: 10px 200px;
+    gap: 10px;
+    justify-content: left;
+    padding: 0 2em;
+  }
+}
