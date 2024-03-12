@@ -1,2 +1,2 @@
 # hotel-website
-hotel website created using HTML5, CSS3 and JavaScript
+a clone of a hotel website created using HTML5, CSS3 and JavaScript
